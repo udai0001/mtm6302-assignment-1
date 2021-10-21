@@ -47,8 +47,10 @@ table {
 	border-spacing: 0;
 }
 
-/* CUSTOM STYLES */
+/* ---------------------CUSTOM STYLES--------------------- */
+/* Desktop styling */
 
+/* Universal styling */
 body {
     line-height: 1.5;
 }
@@ -60,6 +62,7 @@ body {
     line-height: inherit;
 }
 
+/* Header styles */
 .site-header {
     background-color: #ffc31f;
     text-align: center;
@@ -67,6 +70,7 @@ body {
     padding-bottom: 75px;
 }
 
+/* Main section styles */
 h1 {
     font-family:'ZCOOL KuaiLe', cursive;
     font-size: 4.063rem;
@@ -88,27 +92,11 @@ main {
     padding: 4em;
     text-align: left;
 }
+
 main p {
     font-size: 24px;
     color: white;
     font-weight: lighter;
-}
-
-.unicode {
-    font-size: 18px;
-    font-family: 'Courier Prime', monospace;
-    background-color: black;
-}
-
-.site-footer {
-    background-color: #ffc31f;
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
-}
-
-.site-footer p {
-    font-family: 'Roboto', sans-serif;
 }
 
 #container{
@@ -122,6 +110,27 @@ main p {
     font-size: 7rem;
 }
 
+.unicode {
+    font-size: 18px;
+    font-family: 'Courier Prime', monospace;
+    background-color: black;
+}
+
+/* Footer styles */
+.site-footer {
+    background-color: #ffc31f;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.site-footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #312709;
+}
+
+/* ---------------TABLET STYLES--------------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #container {
         display: grid;
@@ -131,11 +140,24 @@ main p {
     }
 }
 
+/* ---------------MOBILE STYLES--------------- */
 @media only screen and (min-width: 375px) and (max-width: 768px) {
     #container {
         display: grid;
         text-align: center;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
+    }
+    h1 {
+        font-size: 3.375rem;
+    }
+    .welcome p {
+        font-size: 20px;
+    }
+    .emoji-gallery .emoji-picture {
+        font-size: 6rem;
+    }
+    .unicode {
+        font-size: 16px;
     }
 }
